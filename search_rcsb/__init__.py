@@ -43,7 +43,7 @@ def parseRequest(query, viewOnline = False):
 
 
 # [[[ Utilities ]]]
-def findSimilar(pdb_entry, viewOnline = True):
+def findSimilarStructure(pdb_entry, viewOnline = True):
     # The query to search similar assemblies...
     query = {
       "query": {
@@ -134,7 +134,7 @@ def findSimilarSequence(sequence, identity_cutoff, evalue_cutoff = 10, viewOnlin
 
 
 
-def macromolecule(macromolecule_type, viewOnline = False):
+def searchMacromolecule(macromolecule_type, viewOnline = False):
     query = {
       "query": {
         "type": "terminal",
